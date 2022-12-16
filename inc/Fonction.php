@@ -59,6 +59,21 @@ function getIdClient($mail,$mdp)
     return $id;
 }
 
+function getIdAdmin($mail,$mdp)
+{
+    $id=-1;
+    $requete= "select * from \"Admin\" where email='".$mail."' and mot_de_passe='".$mdp."'";
+    $connexion=getConnexion();
+    $resultats=$connexion->query($requete);
+    $reponse=$resultats->fetchAll();
+    $resultats->closeCursor();
+    if(sizeof($reponse)>0)
+    {
+        $id=$reponse[0]['idClient'];
+    }
+    return $id;
+}
+
 function verifyUser($mail,$mdp)
 {
     $id=getIdClient($mail,$mdp);
@@ -105,11 +120,29 @@ function verifyAdmin($mail,$mdp)
     return false;
 }
 
-
-function($mois,$annee,$jour)
+function getChambeOccuper($mois,$annee,$jour)
 {
-    
+    $date=$annee."-".$mois."-".$jour;
+    $requete="select count(\"Habitations\".\"loyer\") as somme from \"Reservations\" join \"Habitations\" on \"Habitations\".\"idHabitation\"=\"Reservations\".\"idHabitation\" where '".$date."' between \"Reservations\".\"fin\"  and \"Reservations\".\"debut\"";
+    //echo $requete;
+    $connexion=getConnexion();
+    $resultats=$connexion->query($requete);
+    $reponse=$resultats->fetchAll();
+    $resultats->closeCursor();
+    return $reponse[0]['somme'];
 }
+function getSommeLoyer($mois,$annee,$jour)
+{
+    $date=$annee."-".$mois."-".$jour;
+    $requete="select sum(\"Habitations\".\"loyer\") as somme from \"Reservations\" join \"Habitations\" on \"Habitations\".\"idHabitation\"=\"Reservations\".\"idHabitation\" where '".$date."' between \"Reservations\".\"fin\"  and \"Reservations\".\"debut\"";
+    //echo $requete;
+    $connexion=getConnexion();
+    $resultats=$connexion->query($requete);
+    $reponse=$resultats->fetchAll();
+    $resultats->closeCursor();
+    return $reponse[0]['somme'];
+}
+
 
 function getJourMois($mois,$annee)
 {

@@ -1,0 +1,15 @@
+<?php
+    include('Fonction.php');
+    $mail=$_POST['email'];
+    $pwd=$_POST['password'];
+    if(verifyAdmin($mail,$pwd)==false)
+    {
+        header("location:../pages/login.php?error=0&admin=0");
+    }
+    else
+    {
+        session_start();
+        $_SESSION['admin']=getIdAdmin($_POST['email'],$_POST['password']);
+        header("location:../pages/acceuilAdmin.php");
+    }
+?>

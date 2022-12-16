@@ -5,6 +5,7 @@
     if(isFree($_POST['arrivee'],$_POST['depart'],$_POST['habitat']))
     {
         insertReservation($_POST['arrivee'],$_POST['depart'],$_POST['habitat'],$_POST['client']);
+        header("location:../pages/acceuilClient.php");
     }
     else
     {

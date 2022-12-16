@@ -11,7 +11,11 @@
 </head>
 <body>
     <div class="container">
-        <form action="../inc/ConnexionClient.php" method="POST">
+        <?php if(isset($_GET['admin'])) { ?>
+            <form action="../inc/ConnexionAdmin.php" method="POST">    
+        <?php } else { ?>
+            <form action="../inc/ConnexionClient.php" method="POST">
+        <?php } ?>
         <div class="row">
             <div class="col-md-6" id="left">
                 <h2 id="soratra">Bienvenu dans </h2>

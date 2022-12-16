@@ -29,8 +29,8 @@
 
         <div class="row2">
             <div class="col-md-6" id="gauche">
-                <button id="reserver">Reserver</button>
-                <button id="calendrier">Voir calendrier</button>
+                <a href="reservation.php?idHabitat=<?php echo $_GET['id']; ?>"><button id="reserver">Reserver</button></a>
+                <a href="#"><button id="calendrier">Voir calendrier</button></a>
             </div>
             <div class="col-md-6"></div>
 
@@ -45,10 +45,8 @@
                 for($i=0;$i<sizeof($liste);$i++){?>
                 <div class="image"><img src="../assets/images/<?php echo $liste[$i]['source']; ?>" alt="" width="350px" height="300px"></div>
                 <?php } ?>
-                
-
-                    <input type="submit" value="Ajouter image" id="add">
-
+                    <!-- <input type="submit" value="Ajouter image" id="add"> -->
+                    <a href="ajouterPhoto.php?id=<?php echo $_GET['id']; ?>"> <button>Ajouter image</button></a>
                 
             </div>
         </div>

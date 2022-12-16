@@ -8,6 +8,6 @@
 </head>
 <body>
     <a href="inscription.php"><button>ESPACE CLIENT</button></a>
-    <a href="#"><button>ESPACE ADMIN</button></a>
+    <a href="login.php?admin=0"><button>ESPACE ADMIN</button></a>
 </body>
 </html>

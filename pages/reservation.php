@@ -1,3 +1,7 @@
+<?php session_start();
+    $id=$_SESSION['connecte'];
+    echo $id;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +12,8 @@
 </head>
 <body>
     <form action="../inc/reserver.php" method="POST">
-        <input type="hidden" name="habitat" value="1">
-        <input type="hidden" name="client" value="2">
+        <input type="hidden" name="habitat" value="<?php echo $_GET['idHabitat']; ?>">
+        <input type="hidden" name="client" value="<?php echo $id; ?>">
         <p>Date arrivee <input type="date" name="arrivee"></p>
         <p>Date depart <input type="date" name="depart"></p>
         <input type="submit" value="valider">

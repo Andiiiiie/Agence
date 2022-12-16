@@ -9,7 +9,8 @@
     else
     {
         session_start();
-        $_SESSION['connecte']=getIdClient($_POST['mail'],$_POST['password']);
+        $_SESSION['connecte']=getIdClient($_POST['email'],$_POST['password']);
+        echo $_SESSION['connecte'];
         header("location:../pages/acceuilClient.php");
     }
 ?>
