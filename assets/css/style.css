@@ -1,0 +1,69 @@
+#connexion
+{
+    height: 600px;
+    background-color:whitesmoke;
+    margin-top: 30px;
+}
+#mail
+{
+    height: 40px;
+    width: 350px;
+    margin-top: 30px;
+}
+#mdp
+{
+    height: 40px;
+    width: 350px;
+    margin-top: 20px;
+}
+#bouton
+{
+    height: 40px;
+    width: 350px;
+    margin-top: 30px;
+    background-color: rgb(43, 124, 43);
+}
+#h2
+{
+    color: rgb(83, 79, 77);
+    text-align: center;
+
+}
+#left
+{
+
+    background-image: url(../../images/fond.jpg);
+    background-size: cover;
+    height: 600px;
+    margin-top: 30px;
+}
+#agence
+{
+    margin-top: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+#acces
+{
+    text-align: center;
+    margin-top: 20px;
+}
+#inscription
+{
+    text-align: right;
+    margin-top: 10px;
+}
+#soratra
+{
+    text-align: center;
+    color: white;
+    font-family: inherit;
+    margin-top: 200px;
+}
+#soratra2
+{
+    text-align: center;
+    color: white;
+    font-family: inherit;
+}
+

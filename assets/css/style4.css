@@ -1,0 +1,81 @@
+#left
+{
+    height: 400px;
+}
+#right
+{
+    height: 400px;
+    box-shadow: 0 0 4px;
+}
+.container
+{
+    margin-top: 50px;
+}
+#nb
+{
+    margin-top:40px;
+}
+p{
+    margin-top: 10px;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#loyer
+{
+    clear: both;
+    font-weight: 600;
+}
+.row2
+{
+    height: 100px;
+}
+#reserver
+{
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: rgb(84, 170, 84);
+
+}
+#calendrier
+{
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: rgb(84, 170, 84);
+
+
+}
+
+.image
+{
+    height: 300px;
+    width: 350px;
+    float: left;
+    margin-left:20px;
+    margin-top: 20px;
+    background-color: salmon;
+    
+}
+#footer
+{
+    height: 100px;
+    background-color: gray;
+    margin-top: 50px;
+    clear: both;
+}
+#add
+{
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: rgb(84, 170, 84);
+}
+#bas
+{
+    text-align: center;
+    margin-top: 40px;
+}

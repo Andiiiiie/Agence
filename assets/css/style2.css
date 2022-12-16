@@ -1,0 +1,92 @@
+#inscription
+{
+    height: 600px;
+    background-color:whitesmoke;
+    float: left;
+    margin-top: 30px;
+}
+#left
+{
+    height: 600px;
+    margin-top: 30px;
+    background-image: url(../../images/fond.jpg);
+    background-size: cover;
+
+}
+
+.info
+{
+    height: 40px;
+    margin-top: 10px;
+}
+
+
+
+
+
+#nom
+{
+    height: 40px;
+    width: 350px;
+    margin-top: 30px;
+}
+#numero
+{
+    height: 40px;
+    width: 350px;
+    margin-top: 20px;
+}
+#mail
+{
+    height: 40px;
+    width: 350px;
+    margin-top: 20px;
+}
+#mdp
+{
+    height: 40px;
+    width: 350px;
+    margin-top: 20px;
+}
+#bouton
+{
+    height: 40px;
+    width: 350px;
+    margin-top: 20px;
+    background-color: rgb(43, 124, 43);
+}
+#h2
+{
+    color: rgb(83, 79, 77);
+    text-align: center;
+
+}
+#agence
+{
+    margin-top: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+#acces
+{
+    text-align: center;
+    margin-top: 20px;
+}
+#connexion
+{
+    text-align: right;
+    margin-top: 10px;
+}
+#soratra
+{
+    text-align: center;
+    color: white;
+    font-family: inherit;
+    margin-top: 200px;
+}
+#soratra2
+{
+    text-align: center;
+    color: white;
+    font-family: inherit;
+}

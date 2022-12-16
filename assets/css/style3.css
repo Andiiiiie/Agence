@@ -1,0 +1,191 @@
+#all
+{
+    height: 1150px;
+    width: 1000px;
+    margin-left: 300px;
+}
+#top
+{
+    height: 80px;
+    width: 1000px;
+    float: left;
+    box-shadow: 0 0 5px;
+}
+#mid
+{
+    height: 50px;
+    width: 1000px;
+    margin-top: 10px;
+    float: left;
+}
+#bot
+{
+    height: 800px;
+    width: 980px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#footer
+{
+    height: 150px;
+    width: 1000px;
+    float: left;
+    margin-top: 50px;
+    box-shadow: 0 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#logo
+{
+    height: 60px;
+    width: 100px;
+    background-color: seagreen;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#recherche
+{
+    height: 60px;
+    width: 450px;
+    float: left;
+    margin-left: 200px;
+    margin-top: 10px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px;
+}
+#deconnexion
+{
+    height: 54px;
+    width: 110px;
+    float: left;
+    margin-left: 115px;
+    margin-top: 10px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px;
+}
+
+
+
+
+
+
+
+
+#lesnavs
+{
+    width: 990px;
+    float: left;
+    margin-left: 5px;
+}
+#maison
+{
+    width: 232px;
+    height: 250px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px;
+}
+
+#chercher
+{
+    height: 40px;
+    width: 380px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 10px;
+    border-radius: 30px;
+
+}
+#loupe
+{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(212, 64, 89);
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+#icon
+{
+    float: left;
+    color: white;
+}
+#out
+{
+    height: 20px;
+    width: 50px;
+    float: left;
+    margin-left: 5px;
+    margin-top:17px;
+    
+}
+#droite
+{
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 7px;
+    border-radius: 20px;
+}
+#icon2
+{
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+#petitTexte
+{
+    text-align: center;
+    margin-top: 75px;
+}
+#search
+{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(212, 64, 89);
+    float: left;
+    border-radius: 25px;
+}
+
+
+
+#haut
+{
+    width: 232px;
+    height: 20px;
+    float: left;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+#image
+{
+    height: 200px;
+    width: 232px;
+    float: left;
+    background-color: yellow;
+}
+#bout
+{
+    height: 25px;
+    width: 100px;
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 62px;
+}

@@ -1,0 +1,15 @@
+<?php
+    include('Fonction.php');
+    $mail=$_POST['email'];
+    $pwd=$_POST['password'];
+    if(verifyUser($mail,$pwd)==false)
+    {
+        header("location:../pages/login.php?error=0");
+    }
+    else
+    {
+        session_start();
+        $_SESSION['connecte']=getIdClient($_POST['mail'],$_POST['password']);
+        header("location:../pages/acceuilClient.php");
+    }
+?>
